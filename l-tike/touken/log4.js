@@ -81,7 +81,7 @@ link.download = text_name;link.click();
 
 //次画面へ
 if (pc == true){
-  var sleep = 0:
+  var sleep = 0;
 }else{
   var sleep = 2000;
 }
