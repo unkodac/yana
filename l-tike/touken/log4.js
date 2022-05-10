@@ -69,7 +69,7 @@ var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
-},500);
+},1000);
 
 //次画面へ
 setTimeout(function(){
