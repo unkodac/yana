@@ -14,7 +14,7 @@ var f = el[27].outerText;
 var g = el[30].outerText;
 var h = el[33].outerText;
 var i = el[35].outerText;
-var j = el[43].outerText;
+var j = el[42].outerText;
 
 //改行を取り除く
 var a_ = a.split('\n');
@@ -69,7 +69,7 @@ var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
-},300);
+},500);
 
 //次画面へ
 setTimeout(function(){
