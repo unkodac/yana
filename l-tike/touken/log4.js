@@ -2,27 +2,19 @@
 
 //使用者
 var user = "高森";
-//PCで使用するか
-var pc = false;
 
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
-if (pc == true){
-  var a = el[5].outerText;
-  var b = el[6].outerText;
-  var c = el[11].outerText;
-}else{
-  var a = el[2].outerText;
-  var b = el[4].outerText;
-  var c = el[10].outerText;
-}
-var d = el[23].outerText;
-var e = el[25].outerText;
-var f = el[26].outerText;
-var g = el[29].outerText;
-var h = el[32].outerText;
-var i = el[34].outerText;
-var j = el[41].outerText;
+var a = el[2].outerText;
+var b = el[4].outerText;
+var c = el[10].outerText;
+var d = el[24].outerText;
+var e = el[26].outerText;
+var f = el[27].outerText;
+var g = el[30].outerText;
+var h = el[33].outerText;
+var i = el[35].outerText;
+var j = el[43].outerText;
 
 //改行を取り除く
 var a_ = a.split('\n');
@@ -80,11 +72,6 @@ link.download = text_name;link.click();
 },300);
 
 //次画面へ
-if (pc == true){
-  var sleep = 0;
-}else{
-  var sleep = 2000;
-}
 setTimeout(function(){
 //document.querySelector("[name=ENTRY_FIX]").click();
-},sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
