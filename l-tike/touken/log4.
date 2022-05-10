@@ -1,7 +1,7 @@
 //申込ログ採取ツール
 
 //使用者
-var user = "由香";
+var user = "高森";
 //PCで使用するか
 var pc = false;
 
