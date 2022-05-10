@@ -74,4 +74,4 @@ link.download = text_name;link.click();
 //次画面へ
 setTimeout(function(){
 document.querySelector("[name=ENTRY_FIX]").click();
-},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},3000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
