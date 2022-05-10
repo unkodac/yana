@@ -69,9 +69,10 @@ var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
-},1000);
 
 //次画面へ
 setTimeout(function(){
 document.querySelector("[name=ENTRY_FIX]").click();
-},3000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},1000);
+
