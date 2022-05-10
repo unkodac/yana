@@ -54,9 +54,9 @@ var pass = j_.join('');
 
 //IPアドレス取得
 async function getip(){
-    const API_URL = 'https://api.ipify.org/?format=json';
-    const res = await fetch(API_URL);
-    const data = await res.json();
+    var API_URL = 'https://api.ipify.org/?format=json';
+    var res = await fetch(API_URL);
+    var data = await res.json();
     ip = data.ip;
     return ip;
 }
@@ -68,6 +68,7 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
            getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
 //ログ本体生成
+setTimeout(function(){
 log = [kaijou,nichiji,maisuu,meado,denwa,uketori,shiharai,shimei,shimei_kana,pass,date,ip,user,'\n'];
 
 //ログをtxtファイルに保存
@@ -76,6 +77,7 @@ var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
+},300);
 
 //次画面へ
 if (pc == true){
@@ -84,5 +86,5 @@ if (pc == true){
   var sleep = 2000;
 }
 setTimeout(function(){
-document.querySelector("[name=ENTRY_FIX]").click();
+//document.querySelector("[name=ENTRY_FIX]").click();
 },sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
