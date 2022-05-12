@@ -1,7 +1,7 @@
 //申込ログ採取ツール
 
 //使用者
-var user = "高森";
+var user = "もふもふ";
 
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
