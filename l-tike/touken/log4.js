@@ -61,7 +61,7 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
 
 //ログ本体生成
 setTimeout(function(){
-log = [kaijou,nichiji,maisuu,meado,denwa,uketori,shiharai,shimei,shimei_kana,pass,date,ip,user,'\n'];
+log = [kaijou,nichiji,maisuu,meado,,denwa,uketori,shiharai,shimei,shimei_kana,pass,date,ip,user,'\n'];
 
 //ログをtxtファイルに保存
 var text_name = meado + '.txt';
