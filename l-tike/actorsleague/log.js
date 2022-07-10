@@ -5,16 +5,16 @@ var user = "もふもふ";
 
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
-var a = el[7].outerText;
-var b = el[8].outerText;
-var c = el[13].outerText;
-var d = el[29].outerText;
-var e = el[31].outerText;
-var f = el[32].outerText;
-var g = el[35].outerText;
-var h = el[38].outerText;
-var i = el[40].outerText;
-var j = el[47].outerText;
+var a = el[4].outerText;
+var b = el[6].outerText;
+var c = el[12].outerText;
+var d = el[30].outerText;
+var e = el[32].outerText;
+var f = el[33].outerText;
+var g = el[36].outerText;
+var h = el[39].outerText;
+var i = el[41].outerText;
+var j = el[48].outerText;
 
 //改行を取り除く
 var a_ = a.split('\n');
