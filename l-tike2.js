@@ -68,7 +68,7 @@ document.forms.ttg100.elements.APLCT_ZIP.value = post;
 document.forms.ttg100.elements.APLCT_PREF.value = pref;
 document.forms.ttg100.elements.APLCT_CITY.value = city + town;
 document.forms.ttg100.elements.APLCT_LNUM.value = hn;
-document.getElementById("ETKT_CONSENT_BUTTON_OK").checked = true;
+document.getElementById("q_1-同意する").checked = true;
 
 //次画面へ
 document.querySelector("[name=NEXT_BUTTON]").click();　
