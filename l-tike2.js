@@ -45,7 +45,7 @@ if(birth_d < 10){
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
-var pref = "東京都";
+var pref = "大阪府";
 var post = array_post[post_pic];
 var city = array_city[post_pic];
 var town = array_town[post_pic];
