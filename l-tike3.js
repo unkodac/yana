@@ -37,7 +37,7 @@ log = [kaijou,nichiji,maisuu,meado,,denwa,uketori,shiharai,shimei,shimei_kana,bi
 
 //ログをtxtファイルに保存
 var text_name = meado + '.txt';
-var blob = new Blob([log],{type:"text/plan"});
+var text_name = String(getdate.getMonth() + 1) + String(getdate.getDate()) + String(getdate.getHours()) + String(getdate.getMinutes()) + String(getdate.getSeconds()) + meado + '.txt';
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
